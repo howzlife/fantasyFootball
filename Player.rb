@@ -20,4 +20,8 @@ class Player
 		return @salary.gsub(/\D/,'').to_i
 	end
 
+	def getPoints() 
+		return @expPoints.to_i
+	end
+
 end

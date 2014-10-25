@@ -10,6 +10,7 @@ class Roster
 		@wr3 = wr3
 		@te1 = te
 		@MAXSALARY = 50000
+		@totPoints = @qb.getPoints + @rb1.getPoints  + @rb2.getPoints + @wr1.getPoints  + @wr2.getPoints + @wr3.getPoints + @te1.getPoints 
 		@totSalary = @qb.getSalary() + @rb1.getSalary() + @rb2.getSalary() + @wr1.getSalary() + @wr2.getSalary() + @wr3.getSalary() + @te1.getSalary()
 	end
 	def print() 		# print values to screen
@@ -22,6 +23,7 @@ class Roster
 		puts @wr3.toString()
 		puts @te1.toString()
 		puts "Max Salary: #{@MAXSALARY}"
+		puts "Expected Total: #{@totPoints}"
 	end
 
 	def validate()  #check that salary is under MAXSALARY
