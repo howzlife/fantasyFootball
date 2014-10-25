@@ -1,4 +1,5 @@
 class Player
+
 	def initialize(position, name, ppg, gp, matchup, salary, pm, expPoints, dpp)
 		@position = position
 		@name = name
@@ -14,4 +15,9 @@ class Player
 	def toString() 
 		return "#{@position} #{@name} #{@ppg} #{@gp} #{@matchup} #{@salary} #{@pm} #{@expPoints} #{@dpp}"
 	end
+
+	def getSalary() 
+		return @salary.gsub(/\D/,'').to_i
+	end
+
 end

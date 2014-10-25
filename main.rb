@@ -28,11 +28,6 @@ te1 = Player.new(te["position"], te["name"], te["ppg"], te["gp"], te["matchup"],
 
 firstRoster = Roster.new(qb1, rb1, rb2, wr1, wr2, wr3, te1)
 
-puts qb1.toString()
-puts wr1.toString()
-puts wr2.toString()
-puts wr3.toString()
-puts rb1.toString()
-puts rb2.toString()
-puts te1.toString()
+firstRoster.print()
+puts firstRoster.validate()
 
