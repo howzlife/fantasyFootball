@@ -1,7 +1,7 @@
-require 'Player.rb'
+require './Player.rb'
 
 class Roster
-	def initialize(Player qb, Player rb1,Player rb2,Player wr1,Player wr2,Player wr3,Player te)
+	def initialize(qb, rb1, rb2, wr1, wr2, wr3, te)
 		@qb = qb
 		@rb1 = rb1
 		@rb2 = rb2
