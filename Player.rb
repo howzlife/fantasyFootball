@@ -10,4 +10,8 @@ class Player
 		@expPoints = expPoints
 		@dpp = dpp
 	end
+
+	def toString() 
+		return "#{@position} #{@name} #{@ppg} #{@gp} #{@matchup} #{@salary} #{@pm} #{@expPoints} #{@dpp}"
+	end
 end
